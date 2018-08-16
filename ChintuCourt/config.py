@@ -13,7 +13,7 @@ ponni_twilio_linked_phone_num="+12149911965"
 ponni_twilio_num="+19723664883"
 ponni_ymail="adarshjetti@yahoo.co.in"
 ponni_gmail="adarsj@gmail.com"
-ponni_gmail_pwd="MOMorigin*"
+ponni_gmail_pwd="*******"
 
 chintu_sid="AC5d0f29490c381bf1af4c3194a7a97b9d"
 chintu_auth="bddd3cf2914056390dd8142436e26374"
