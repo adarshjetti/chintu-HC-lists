@@ -8,9 +8,10 @@ class GetHighCourtHomePage():
 
     def get_home_page(self):
 
-        driver_location=pass_driver_location
-        os.environ["webdriver.Chrome.driver"]=driver_location
-        driver=webdriver.Chrome(driver_location)
+        #driver_location=pass_driver_location
+        #os.environ["webdriver.Chrome.driver"]=driver_location
+        #driver=webdriver.Chrome(driver_location)
+        driver = webdriver.Firefox(executable_path=pass_ff_driver_location)
 
         driver.maximize_window()
         driver.get("http://hc.tap.nic.in/")
@@ -37,7 +38,7 @@ class GetHighCourtHomePage():
 
                 for unwanted_window in unnecessary_windows_list:
                     driver.switch_to.window(unwanted_window)
-                    print("Closing unwanted window '"+unwanted_window+"'")
+                    print("Closing unwanted window '"+str(unwanted_window)+"'")
                     driver.close()
                 break
         driver.switch_to.window(window_required)
