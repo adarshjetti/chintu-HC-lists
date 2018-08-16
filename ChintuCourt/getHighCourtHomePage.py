@@ -11,6 +11,7 @@ class GetHighCourtHomePage():
         #driver_location=pass_driver_location
         #os.environ["webdriver.Chrome.driver"]=driver_location
         #driver=webdriver.Chrome(driver_location)
+        #os.environ['MOZ_HEADLESS'] = '1'
         driver = webdriver.Firefox(executable_path=pass_ff_driver_location)
 
         driver.maximize_window()
